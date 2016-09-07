@@ -1,0 +1,7 @@
+<h1>Simple calc</h1>
+<form >
+  <input name="first_val", placeholder="x", value= <%=params[:first_val]%> >+
+  <input name="second_val", placeholder="y", value= <%=params[:second_val]%> >
+  <input type="submit" value="=">
+  <%= @res=="" or @res.nil? ? "x+y" : @res%>
+</form>
